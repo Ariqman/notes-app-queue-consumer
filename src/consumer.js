@@ -1,8 +1,8 @@
 require('dotenv').config();
 const amqp = require('amqplib');
-const NotesService = require('./NotesService');
-const MailSender = require('./MailSender');
-const Listener = require('./Listener');
+const NotesService = require('./notesService');
+const MailSender = require('./mailSender');
+const Listener = require('./listener');
  
 const init = async () => {
   const notesService = new NotesService();
